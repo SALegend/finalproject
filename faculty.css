@@ -1,0 +1,94 @@
+* {
+    color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* background-image: url('https://www.shutterstock.com/image-illustration/contact-us-message-landing-page-260nw-765294985.jpg'); */
+    background-image: url('https://media.istockphoto.com/id/877787978/photo/dark-blue-abstract-background.jpg?b=1&s=170667a&w=0&k=20&c=ESrP0j2wQ0LwEbm3TwdoDrJZZjnQGMRNCxKXgBgqh_s=');
+    /* background-image: url('https://media.istockphoto.com/id/1337977426/photo/dark-gray-and-black-grunge-cement-wall-studio-room-space-product-background-template.jpg?b=1&s=170667a&w=0&k=20&c=4dVCV5KtJKEhuQtp5dbnFmwMBAzNknz35VUIa0C3KoE='); */
+    /* background-repeat: repeat; */
+    background-repeat: repeat;
+    /* background-size: contain; */
+}
+
+header {
+    /* background-color: #333; */
+    color: #fff;
+    padding: 20px;
+    font-size: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    background: none;
+    margin: 20px;
+    padding: 20px;
+    border: 3px dotted whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.contact-card h3 {
+    margin-top: 0;
+}
+
+/* footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+} */
+
+.clg1 {
+
+
+    font-size: 50px;
+}
+
+.clg2 {
+
+    border: solid red 5px;
+
+}
+
+
+.con1 {
+    position: relative;
+    top: 30px;
+    font-size: 30px;
+}
+
+.cont {
+    font-size: 40px;
+}
+
+.content {
+    width: 600px;
+    height: 300px;
+    background-color: rgb(14, 14, 12);
+    border-radius: 50px;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+
+}
+.home{
+    margin-right: 10px;
+    text-align: right;
+    font-size: large;
+}

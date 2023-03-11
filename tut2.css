@@ -1,0 +1,303 @@
+
+/* *{
+        margin:0;
+    padding:0;
+    
+} */
+
+.section1{
+    background-color:rgb(206, 196, 145);
+}
+
+a{
+    text-decoration: none;
+
+
+}
+
+
+#w{
+    flex-basis: 50%;
+    float:left;
+}
+#l{
+    display:inline-block ;
+    margin-left:282px;
+    margin-top: 17px;
+    box-sizing: border-box;
+
+
+}
+ul li{
+    display: inline-block ;
+    list-style-type: none;
+    text-decoration: none;
+    color:black;
+    box-sizing: border-box;
+}
+li:hover{
+    background-color: black;
+    color: white;
+    border:white;
+    border-radius:32px;
+}
+li a{
+    color:black;
+}
+li a  a:hover{
+    color:white;
+
+}
+li{
+    padding: 20px;
+    margin: 2px;
+    font-size: x-large;
+    font-weight: bolder;
+    letter-spacing: 2px
+}
+#fixed{
+
+    
+    height:12%;
+   width: 100%;
+top:-6px;
+position:fixed;
+border-bottom: white solid 2px;
+
+
+}
+
+.section1{
+
+
+    display:flex;
+   
+    width:100%;
+}
+
+.sect1div{
+    margin-left: 12%;
+    margin-top:31%;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    
+}
+#firsth1{
+    width: 310px;
+    font-size: xx-large;
+}
+#firstpara{
+    width: 310px;
+    font-size: x-large;
+    margin-top:20px;
+    
+    
+}
+.divsect1{
+    display:flex;
+    
+    
+
+}
+.sect1div{
+    flex-basis: 50%;
+    
+}
+#photo{
+    padding:155px;
+}
+button{
+
+    height:35px;
+    width:130px;
+    background-color: orange;
+    font-size: 15px;
+    border-radius: 16px;
+    margin-top:30px;
+}
+/* now the next section of the webpage starts */
+/* .heading1{
+    font-weight: bolder;
+    font-size:40px;
+    text-align: center;
+    text-decoration-line:underline overline;
+} */
+.section2{
+    border:2px solid black;
+    display:flex;
+}
+
+.col1{
+    flex-basis: 23%;
+    margin-left: 8px;  
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.5s; 
+     
+}
+.col1:hover{
+    transform: translateY(-5px);
+}
+.sect2div{
+    margin: 10% 10%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.section2 img{
+    max-width: 100%;
+    
+} 
+/* now the next section starts */
+
+.section3{
+    display: flex;
+    margin:12% 12%;
+}
+.sect3div{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.col5{
+    flex-basis: 23%;
+    display: flex;
+    margin-left: 8px;
+    flex-direction: column;
+    transition: transform 0.5s;
+    
+}
+.col5 img{
+    max-width: 80%;
+    
+    margin-bottom: 15px;
+}
+
+.name{
+    text-align: center;
+    font-weight: bold;
+}
+.col5:hover{
+    transform:translateY(-5px);
+}
+
+
+
+/* from here section4 css starts */
+
+.section4{
+
+    background-color:rgb(154, 179, 209);
+    
+}
+.divsec4{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.div1 img{
+    max-width: 80%;
+
+}
+.div1{
+    flex-basis:50%;
+}
+.div2{
+    flex-basis: 50%;
+}
+
+.master{
+    font-size: 21px;
+    color:whitesmoke;
+    margin-top:140px;
+    margin-left:27px;
+}
+.content{
+ width: 400px;
+ margin-top:40px;
+}
+.col10{
+    display: inline-block;
+    margin-left: 17px;
+    margin-top: 45px;
+
+}
+.col10 img{
+    filter: grayscale(100%)
+}
+
+.col10 img:hover{
+    filter:grayscale(0%);
+}
+
+
+.brands{
+    margin-left: 250px;
+}
+
+/* the last section of the main page ends here  */
+
+.end{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+
+}
+.last{
+    flex-basis: 25%;
+    display:flex;
+    flex-direction: column;
+    color:white;
+    padding: 25px;
+    text-align:center;
+
+}
+.lastimg1 img{
+    max-width: 38%;
+    max-height: 100%;
+}
+.lastimg1{
+    flex-direction:row;
+    margin-top: 12px;
+}
+#redstore{
+    display: flex;
+    flex-direction: column;
+
+}
+#redstore img{
+    
+    max-width:60%;
+    margin-left: 56px;
+}
+#para{
+    width: 300px;
+    margin-top:11px;
+}
+
+/* soo sorry ....adding mediia querie to make navigatiobn bar a bit more responsive. */
+@media screen and (max-width:1330px)  {
+/* will roll out later */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

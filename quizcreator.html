@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Multiple-Choice Questions</title>
+    <link rel="shortcut icon" href="quiz.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="quizcreator.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <center><h1>Dynamic Multiple-Choice Quiz Creator</h1></center>
+      <div id="questions">
+        <div class="question">
+          <label for="question1Input">Question 1:</label>
+          <input type="text" id="question1Input" name="question1" />
+        </div>
+        <div class="choices" style="font-family: 'Caveat', cursive">
+          <label for="choice1Input">Choice 1:</label>
+          <input type="text" id="choice1Input" name="choice1" />
+
+          <button type="button" class="add-choice" onclick="addChoice(this)">
+            Add Choice
+          </button>
+        </div>
+      </div>
+      <button type="button" id="addQuestionButton" onclick="addQuestion()">
+        Add Question
+      </button>
+      <button type="button" id="removeQuestionButton" onclick="removeQuestion()">
+        Remove Question
+      </button>
+      <br />
+      <button id="submitbut">Submit</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

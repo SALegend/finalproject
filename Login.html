@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.onlinequizlogin.com</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Josefin+Sans?query=jose">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="box">
+            <h1>Login</h1>
+            <form action="webcopy.html">
+
+                <div class="inputBox">
+                    <input type="text" onkeyup="email()" required autocomplete="off">
+                    <label id="email">E-mail*</label> 
+                </div>
+
+                <div class="inputBox">
+                    <input type="password" id="password" required autocomplete="off" onkeyup="passcheck()">
+                    <label id="id1">Password*</label>
+                </div>
+
+                <div>
+                    <input type="submit"  value="Login"  onclick="Login()">
+                </div>
+                <div><h3>Do not have an account?<a href="Sign Up.html">Sign Up</a></h3></div>
+                
+            </form>
+        </div>
+</body>
+
+<script>
+
+      function passcheck()
+      {
+        var data=document.getElementById('password').value
+        const lowerCase=new RegExp('(?=.*[a-z])');
+        const upperCase=new RegExp('(?=.*[A-Z])');
+        const number=new RegExp('(?=.*[0-9])');
+        const specialChar=new RegExp('(?=.[!@#\$%\^&\])');
+        const eightChar=new RegExp('(?=.{8,})');
+
+
+        if( eightChar.test(data) && lowerCase.test(data) && upperCase.test(data) && specialChar.test(data) && number.test(data))
+        {
+            document.getElementById('id1').style.color="green";
+            return 1;
+        }
+        else
+        {
+            document.getElementById('id1').style.color="red";
+            return 0;
+        }
+
+      }
+
+    function email()
+    {
+        var data3=document.getElementsByTagName('input')[0].value;
+        if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(data3))
+        {
+            document.getElementById('email').style.color="green";
+            return 1;
+        }
+        else
+        {
+            document.getElementById('email').style.color="red";
+            return 0;
+        }
+    }
+
+    function Login()
+    {
+        var a=passcheck()
+        var c=email()
+
+        if(a && c)
+        {
+            document.getElementsByTagName('input')[2].disabled=false;
+        }
+        else
+        {            
+          document.getElementsByTagName('input')[2].disabled=true;
+        }
+    }
+
+</script>
+
+</html>

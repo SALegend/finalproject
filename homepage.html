@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="photos/favicon.ico" rel="icon">
+        <title>Quizillah</title>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap 5 CSS linked -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+        />
+
+        <!-- Bootstrap 5 JavaScript linked-->
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="home.css" />    
+
+        <meta name="format-detection" content="telephone=yes" />
+        <meta name="language" content="english" />
+        <meta name="robots" content="index,follow" />
+
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+        rel="stylesheet"
+        />
+
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="photos/quiz2.png.jpg" alt="logo" />
+    </header>
+    <div id="middle">
+      <!-- Using Bootstrap 5 navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+            <img id="brand" src="photos/brand.png.jpg" alt="brand" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarColor01">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="about us2.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="faculty.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="" onClick="quiz()">Quiz</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="quizcreator.html"
+                  >Quiz Creator</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Sign Up.html">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="main">
+        <div class="one container">
+          <h1 style="text-align: center;font-family: 'Old Standard TT', serif;">Quiz</h2>
+          <p style="font-family: 'Caveat', cursive;font-size:25px;">
+            Our quiz page is a fun and interactive way to test your knowledge on
+            a variety of topics. With 5 questions and a 15-second timer for each
+            question, you'll need to think fast and answer quickly to get the
+            highest score. To play, simply click the "Start Quiz" button and get
+            ready to go. You'll be presented with the first question and four
+            possible answers. Choose the best answer and click on it before the
+            timer runs out. Don't worry if you don't know the answer, you can
+            always guess! Once you've selected your answer, the page will
+            automatically tell you whether your answer is correct or incorrect.
+            You'll then move on to the next question until you've answered all 5
+            questions. After you've answered all 5 questions, you'll be able to
+            see your final score. Did you get a perfect score? Or did you miss a
+            few questions? Don't worry, you can always try again to improve your
+            score. So what are you waiting for? Try out our quiz page today and
+            see how much you really know!
+          </p>
+          <button class="index__explore" style="border-radius: 21px; background-color: transparent;">
+            <a id="quizlink" href="" onclick="quiz()">
+            <span style="font-size: 0.85rem;">Give Quiz</span>
+            <img class="index__arrow" src="https://axios-iiitl.github.io/images/icons/right-arrow.svg">
+            </a>
+          </button>
+        </div>
+
+        <div class="two container">
+          <div class="container two-first">
+            <h1 style="text-align: center;font-family: 'Old Standard TT', serif;" text>Quiz Creator</h2>
+            <p style="font-family: 'Caveat', cursive;font-size:25px;">Welcome to our quiz creator page! This page is designed for teachers
+            and professors who want to create a quiz for their students. Our
+            easy-to-use interface makes it simple to create a quiz that your
+            students will love. Follow the steps below to get started.
+            </p>
+          </div>
+          <div class="two-second row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="photos/STEP 1.png" class="card-img-top" alt="music" />
+                <div class="card-body">
+                  <h5 class="card-title">Enter your question</h5>
+                  <p class="card-text text-secondary">
+                    The first step to creating a quiz is to enter the question
+                    you want to ask your students. Simply type your question in
+                    the bar provided.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="photos/STEP 2.png"
+                  class="card-img-top"
+                  alt="exercise"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Enter your options</h5>
+                  <p class="card-text text-secondary">
+                    Next, enter the choices for your question. You can enter up
+                    to 4 choices for each question. If you need more than 4
+                    choices, click the "Add Choice" button to add more. If you
+                    need to remove a choice, simply click the "Remove Choice"
+                    button.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="photos/STEP 3.png" class="card-img-top" alt="anime" />
+                <div class="card-body">
+                  <h5 class="card-title">Submit your question</h5>
+                  <p class="card-text text-secondary">
+                    Once you've entered your question and options, click the
+                    "Submit" button to add your question to the quiz. You can
+                    add as many questions as you like by repeating these steps.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="photos/STEP 4.png" class="card-img-top" alt="Books" />
+                <div class="card-body">
+                  <h5 class="card-title">Remove a question</h5>
+                  <p class="card-text text-secondary">
+                    If you need to remove a question, click the "Remove
+                    Question" button. This will remove the question along with
+                    all of its options.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="photos/STEP 5.png" class="card-img-top" alt="Books" />
+                <div class="card-body">
+                  <h5 class="card-title">Submit your quiz</h5>
+                  <p class="card-text text-secondary">
+                    Once you've added all of your questions, click the "Submit
+                    Quiz" button to finalize your quiz. You can now share your
+                    quiz with your students by providing them with the link to
+                    the quiz.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="photos/Untitled design.png" class="card-img-top" alt="Books" />
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text text-secondary">
+                    Creating a quiz has never been easier. With our simple interface, you can create a quiz in just a few minutes. So why wait? Start creating your quiz today and see how much your students enjoy it!
+                  </p>
+                  <p class="card-text text-secondary">
+                    <a href="quizcreator.html">CREATE YOUR QUIZ</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <footer class="footer-dark">
+      <!-- Using Bootstrap 5 grid -->
+      <div class="container foot">
+        <div class="row-1">
+          <img id="logo" src="photos/quiz2.png.jpg" alt="logo" />
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4>Follow Us Here</h4>
+
+            <!-- Using Bootstrap 5 table -->
+            <table class="table table-responsive">
+              <tr>
+                <td>
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="photos/linkedin.png"
+                      alt="linkedin"
+                  /></a>
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    ><img
+                      class="img-fluid"
+                      src="photos/facebook.png"
+                      alt="facebook"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="photos/insta.png"
+                      alt="instagram"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+        function quiz()
+        {
+            alert("Please Sign Up or Login First");
+        }
+    </script>
+  </body>
+</html>
+

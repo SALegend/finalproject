@@ -1,0 +1,105 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: josefin Sans, sans-serif;
+  }
+  
+  body
+  {
+    background-image: url("https://media.istockphoto.com/id/1337475990/photo/q-and-a-question-and-answer-shot-form-on-wooden-block.jpg?b=1&s=170667a&w=0&k=20&c=vcYoaGJ2QCdpXJJZlTv1FXk-8KOoraxQIlXYOBywVX4=");
+    background-repeat: no-repeat; 
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-size:100% 100%; 
+  }
+  
+  .box
+  {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*if we not apply this property then text will align center but not box. */
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border:2px solid white;
+    box-shadow: 3px 3px 10px 3px;
+  }
+  
+  h1{
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  
+  .box .inputBox{
+    position: relative;
+  }
+  
+  input
+  {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+  }
+  
+  label
+  {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  
+  
+  input:focus ~ label,
+  input:valid ~ label
+  {
+    top:-20px;
+    left:0px;
+    font-size: 12px;
+  }
+  
+  #name:focus ~ label,
+  #name:valid ~ label
+  {
+    top:-20px;
+    left:0px;
+    color:green;
+    font-size: 12px;
+  }
+  
+  input[type="submit"]
+  {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding:8px 16px;
+        background-color: #03a9f4;
+        border-radius:5px;
+        font-size: 14px;
+        cursor: pointer;
+  }
+  
+  .password
+  {
+    color:white;
+  }
